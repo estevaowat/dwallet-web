@@ -20,7 +20,9 @@ const authenticateUser = async ({
    const data = { jwt: null };
 
    if (data.jwt == null) {
-      throw new Error('E-mail or password incorrect, please review.');
+      throw new Error(
+         'E-mail or password are incorrect, please review your credentials.',
+      );
    }
 
    // save token in localstorage or somewhere similar;

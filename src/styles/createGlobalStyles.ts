@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
  * {
    margin: 0;
    padding: 0;
@@ -12,14 +14,19 @@ const GlobalStyle = createGlobalStyle`
 html,
 body,
 #root {
-   font-family: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap'), 'Monospace';
+   font-family: 'Noto Sans JP', sans-serif;
    font-size: 16px;
    height: 100%;
    -webkit-font-smoothing: antialiased;
 }
 
+input {
+   font-family: 'Noto Sans JP', sans-serif;
+}
+
 button {
    cursor: pointer;
+   font-family: 'Noto Sans JP', sans-serif;
 }
 
 `;

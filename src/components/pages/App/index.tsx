@@ -1,18 +1,18 @@
 import React from 'react';
 
-import { ThemeStore } from '../../../stores/ThemeStore';
+import { ThemeContextProvider } from '../../../contexts/ThemeContext';
 import GlobalStyles from '../../../styles/createGlobalStyles';
 import Login from '../Login';
 import StyledApp from './styles';
 
 const App = () => (
    <>
-      <ThemeStore>
+      <ThemeContextProvider>
          <GlobalStyles />
          <StyledApp>
             <Login />
          </StyledApp>
-      </ThemeStore>
+      </ThemeContextProvider>
    </>
 );
 

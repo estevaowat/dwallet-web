@@ -1,18 +1,19 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 
 import walletImage from '../../../assets/login-image.jpg';
+import useTheme from '../../../hooks/useTheme';
 import userAuthenticationService from '../../../services/userAuthenticationService';
-import { ThemeContext } from '../../../stores/ThemeStore';
 import Button from '../../atoms/Button';
 import ErrorMessage from '../../atoms/ErrorMessage';
 import Input from '../../atoms/Input';
+import Title from '../../atoms/Title';
 import './login.styles.css';
 
 const Login = () => {
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [errorMessage, setErrorMessage] = useState('');
-   const { toggleTheme } = useContext(ThemeContext);
+   const { toggleTheme } = useTheme();
 
    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
@@ -30,7 +31,7 @@ const Login = () => {
    return (
       <div className="login-container">
          <form onSubmit={handleSubmit} className="form-container">
-            <span className="title">Welcome Back</span>
+            <Title>Welcome Back</Title>
             <Input
                type="email"
                placeholder="E-mail"
@@ -52,7 +53,6 @@ const Login = () => {
             <Button
                type="button"
                onClick={() => {
-                  console.log('clicked');
                   toggleTheme();
                }}
             >

@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const ErrorMessage = ({ text }: IProps) => (
-   <StyledErrorMessage className="error-message">{text}</StyledErrorMessage>
+   <StyledErrorMessage>{text}</StyledErrorMessage>
 );
 
 export default ErrorMessage;
