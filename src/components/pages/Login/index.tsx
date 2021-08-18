@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import walletImage from '../../../assets/login-image.jpg';
-import useTheme from '../../../hooks/useTheme';
+import useAuth from '../../../hooks/useAuth';
 import userAuthenticationService from '../../../services/userAuthenticationService';
 import Button from '../../atoms/Button';
 import ErrorMessage from '../../atoms/ErrorMessage';
@@ -13,16 +13,13 @@ const Login = () => {
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [errorMessage, setErrorMessage] = useState('');
-   const { toggleTheme } = useTheme();
+   const { login } = useAuth();
 
    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
 
       try {
-         await userAuthenticationService.authenticateUser({
-            email,
-            password,
-         });
+         await login({ email, password });
       } catch ({ message }) {
          setErrorMessage(message);
       }
@@ -50,14 +47,6 @@ const Login = () => {
             />
             {errorMessage && <ErrorMessage text={errorMessage} />}
             <Button type="submit">Login</Button>
-            <Button
-               type="button"
-               onClick={() => {
-                  toggleTheme();
-               }}
-            >
-               Change theme
-            </Button>
          </form>
          <div className="image-login-container">
             <img src={walletImage} alt="Guy holding a wallet" />
