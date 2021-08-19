@@ -12,5 +12,10 @@ export default {
       button: '#ffffff',
       error: '#b00020',
    },
-   button: '#4481eb',
+
+   button: {
+      default: '#4481eb',
+      hovered: '#04befe',
+      focused: '#04befe',
+   },
 };

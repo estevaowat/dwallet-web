@@ -12,5 +12,9 @@ export interface ITheme {
       button: string;
       error: string;
    };
-   button: string;
+   button: {
+      default: string;
+      hovered: string;
+      focused: string;
+   };
 }

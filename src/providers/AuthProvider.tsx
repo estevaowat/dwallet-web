@@ -1,7 +1,7 @@
-import IResponseUserAuthentication from 'interfaces/IResponseUserAuthentication';
 import React, { useState } from 'react';
 
 import AuthContext from '../contexts/AuthContext';
+import IResponseUserAuthentication from '../interfaces/IResponseUserAuthentication';
 import IUserAuthenticationDto from '../interfaces/IUserAuthenticationDto';
 import userAuthenticationService from '../services/userAuthenticationService';
 

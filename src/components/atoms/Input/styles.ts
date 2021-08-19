@@ -10,7 +10,7 @@ const Input = styled.input`
 
    :focus {
       border: 2px solid ${props => props.theme.border.focused};
-      transition: border 0.2s linear;
+      transition: border 0.3s linear;
    }
 
    .has-error {
