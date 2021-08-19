@@ -2,12 +2,14 @@ export default {
    name: 'dark',
    primary: '#252f49',
    secondary: '#4481eb',
+   home: '#d1e9fe',
    border: {
       focused: '#04befe',
       error: '#ff0100',
       default: '#dddddd',
    },
    text: {
+      entryCard: '#444',
       default: '#eeeeee',
       button: '#eeeeee',
       error: '#ff0100',
