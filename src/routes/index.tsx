@@ -7,7 +7,7 @@ import UnauthenticatedRoutes from './UnauthenticatedRoutes';
 const Routes: React.FC = () => {
    const { signed } = useAuth();
 
-   return signed ? <AuthenticatedRoutes /> : <UnauthenticatedRoutes />;
+   return !signed ? <AuthenticatedRoutes /> : <UnauthenticatedRoutes />;
 };
 
 export default Routes;

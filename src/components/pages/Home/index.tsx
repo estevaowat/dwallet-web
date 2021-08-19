@@ -1,5 +1,19 @@
 import React from 'react';
 
-const Home = () => <div>Hello from HOME</div>;
+import Entries from '../../organisms/Entries';
+import Header from '../../organisms/Header';
+import StyledHome from './styles';
+
+const Home = () => (
+   <StyledHome>
+      <Header />
+      <Entries />
+      {/* 
+      <div>
+         <LatestsTransactions />
+         <StatiticsByCategory />
+      </div> */}
+   </StyledHome>
+);
 
 export default Home;
