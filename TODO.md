@@ -20,5 +20,8 @@
 -  [] Transform all components into styled components
 
 -  [] Create a home page
+
    -  [] Design a home page for transactions
    -  [] Create test for the home page
+
+-  [] Configure Github Actions to deploy to main

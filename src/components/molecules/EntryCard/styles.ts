@@ -4,7 +4,7 @@ const StyledEntryCard = styled.div`
    display: flex;
    flex-direction: column;
    background-color: #ffffff;
-   max-width: 320px;
+   max-width: 250px;
    padding: 1.5rem;
    border-radius: 1.25rem;
 `;
