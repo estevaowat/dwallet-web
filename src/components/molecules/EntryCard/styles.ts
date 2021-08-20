@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const StyledEntryCard = styled.div`
    display: flex;
    flex-direction: column;
-   background-color: #ffffff;
-   max-width: 250px;
+   background-color: #fff;
+   max-width: 300px;
    padding: 1.5rem;
    border-radius: 1.25rem;
 `;

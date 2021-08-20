@@ -9,7 +9,7 @@ export default {
       default: '#dddddd',
    },
    text: {
-      entryCard: '#444',
+      entryCard: '#0B0B0B',
       default: '#eeeeee',
       button: '#eeeeee',
       error: '#ff0100',
