@@ -14,16 +14,20 @@ const Input: React.FC<IProps> = ({
    value = '',
    onChange,
    required,
+   name,
+   min,
 }: IProps) => {
    const classesNames = hasError ? `${className} has-error` : className;
    return (
       <StyledInput
          type={type}
+         name={name}
          className={classesNames}
          placeholder={placeholder}
          value={value}
          onChange={onChange}
          required={required}
+         min={min}
       />
    );
 };

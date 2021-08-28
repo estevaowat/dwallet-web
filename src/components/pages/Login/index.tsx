@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import walletImage from '../../../assets/login-image.jpg';
 import useAuth from '../../../hooks/useAuth';
-import userAuthenticationService from '../../../services/userAuthenticationService';
 import Button from '../../atoms/Button';
 import ErrorMessage from '../../atoms/ErrorMessage';
 import Input from '../../atoms/Input';
