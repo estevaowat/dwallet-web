@@ -1,0 +1,14 @@
+.latests-transactions {
+   background-color: var(--background-color-card);
+   padding: 1.5rem;
+   border-radius: 1.25rem;
+   max-width: 800px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   color: var(--text-default);
+}
+
+.latests-transactions-list {
+   overflow-x: scroll;
+}

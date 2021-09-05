@@ -1,12 +1,8 @@
 import React, { useState, createContext } from 'react';
-import { ThemeProvider } from 'styled-components';
-
-import { ITheme } from '../styles/ITheme';
-import light from '../styles/themes/light';
 
 interface IThemeContext {
-   theme: ITheme;
-   setTheme: React.Dispatch<React.SetStateAction<ITheme>>;
+   theme: string;
+   setTheme: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
@@ -16,11 +12,11 @@ interface IProps {
 }
 
 const ThemeContextProvider = ({ children }: IProps) => {
-   const [theme, setTheme] = useState(light);
+   const [theme, setTheme] = useState('dark-theme');
 
    return (
       <ThemeContext.Provider value={{ setTheme, theme }}>
-         <ThemeProvider theme={theme}>{children}</ThemeProvider>
+         <div className={theme}>{children}</div>
       </ThemeContext.Provider>
    );
 };

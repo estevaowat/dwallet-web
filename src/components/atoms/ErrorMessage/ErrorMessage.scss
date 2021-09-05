@@ -1,0 +1,8 @@
+@import "styles/themes.scss";
+
+.error-message {
+   color: var(--error-message-text);
+   margin: 1rem 0;
+   max-width: 300px;
+   text-align: center;
+}

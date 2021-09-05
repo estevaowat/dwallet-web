@@ -1,0 +1,15 @@
+.entries {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 20rem);
+   grid-gap: 1rem;
+   margin: 1rem 0;
+   max-width: 800px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@media (max-width: 800px) {
+   .entries {
+      justify-content: center;
+   }
+}

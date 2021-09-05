@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const LatestsTransactionImage = ({ source }: IProps) => (
-   <StyledLatestsTransactionImage src={source} alt="Latest Transaction Icon" />
+   <StyledLatestsTransactionImage src={source} alt="Transaction Icon" />
 );
 
 export default LatestsTransactionImage;

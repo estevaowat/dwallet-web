@@ -28,15 +28,10 @@
    "settings": {
       "babel-plugin-root-import": {
          "rootPathSuffix": "src"
-      }, 
+      },
       "import/resolver": {
          "node": {
-            "extensions": [
-               ".js",
-               ".jsx",
-               ".ts",
-               ".tsx"
-            ]
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
          }
       }
    },
@@ -44,21 +39,14 @@
       "class-methods-use-this": "off",
       "react/prop-types": "off",
       "prettier/prettier": "error",
-      "react/button-has-type": "off", 
+      "react/button-has-type": "off",
       "no-use-before-define": "off",
       "no-unused-vars": "warn",
-      "@typescript-eslint/no-use-before-define": [
-         "error"
-      ],
+      "@typescript-eslint/no-use-before-define": ["error"],
       "react/jsx-filename-extension": [
          1,
          {
-            "extensions": [
-               ".js",
-               ".jsx",
-               ".ts",
-               ".tsx"
-            ]
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
          }
       ],
       "import-helpers/order-imports": [
@@ -66,16 +54,9 @@
          {
             "newlinesBetween": "always",
             "groups": [
-               [
-                  "module",
-                  "absolute"
-               ],
+               ["module", "absolute"],
                "/^@/",
-               [
-                  "parent",
-                  "sibling",
-                  "index"
-               ]
+               ["parent", "sibling", "index"]
             ],
             "alphabetize": {
                "order": "asc",
@@ -95,18 +76,24 @@
          {
             "js": "never",
             "jsx": "never",
-            "ts": "never", 
-            "tsx": "never"         
+            "ts": "never",
+            "tsx": "never"
          }
       ],
-      
+      "jsx-a11y/label-has-associated-control": [
+         2,
+         {
+            "labelAttributes": ["label"],
+            "controlComponents": ["Input"],
+            "assert": "both",
+            "depth": 3
+         }
+      ],
       "@typescript-eslint/naming-convention": [
          "error",
          {
             "selector": "interface",
-            "format": [
-               "PascalCase"
-            ],
+            "format": ["PascalCase"],
             "custom": {
                "regex": "^I[A-Z]",
                "match": true

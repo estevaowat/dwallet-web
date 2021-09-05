@@ -1,0 +1,25 @@
+.invoice {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+}
+
+.invoice-title {
+   font-size: 1.25rem;
+   margin-bottom: 1rem;
+}
+
+.label {
+   display: flex;
+   flex-direction: column;
+}
+
+.results {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0;
+}
