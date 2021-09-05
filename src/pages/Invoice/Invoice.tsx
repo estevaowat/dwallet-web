@@ -31,7 +31,7 @@ const Invoice = () => {
    return (
       <main className="invoice">
          <span className="invoice-title">INVOICE AMOUNT</span>
-         <label htmlFor="input-hours" className="label">
+         <label htmlFor="hours" className="label">
             <span className="label-text">Hours:</span>
             <Input
                id="input-hours"

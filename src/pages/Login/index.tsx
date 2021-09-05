@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 import walletImage from '../../assets/login-image.jpg';
-import Button from '../../components/atoms/Button';
+import Button from '../../components/atoms/Button/Button';
 import ErrorMessage from '../../components/atoms/ErrorMessage/ErrorMessage';
 import Input from '../../components/atoms/Input/Input';
-import Title from '../../components/atoms/Title';
+import Title from '../../components/atoms/Title/Title';
 import useAuth from '../../hooks/useAuth';
-import './login.styles.css';
+import './Login.scss';
 
 const Login = () => {
    const [email, setEmail] = useState('');
@@ -26,7 +26,7 @@ const Login = () => {
    };
 
    return (
-      <div className="login-container">
+      <main className="login-container">
          <form onSubmit={handleSubmit} className="form-container">
             <Title>Welcome Back</Title>
             <Input
@@ -51,7 +51,7 @@ const Login = () => {
          <div className="image-login-container">
             <img src={walletImage} alt="Guy holding a wallet" />
          </div>
-      </div>
+      </main>
    );
 };
 export default Login;

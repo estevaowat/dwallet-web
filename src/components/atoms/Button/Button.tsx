@@ -1,13 +1,13 @@
 import React, { ButtonHTMLAttributes } from 'react';
 
-import StyledButton from './styles';
+import './Button.scss';
 
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const Button = ({ type = 'button', children, onClick }: IProps) => (
-   <StyledButton type={type} onClick={onClick}>
+   <button className="button" type={type} onClick={onClick}>
       {children}
-   </StyledButton>
+   </button>
 );
 
 export default Button;

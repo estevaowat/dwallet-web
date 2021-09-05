@@ -80,12 +80,13 @@
             "tsx": "never"
          }
       ],
+
       "jsx-a11y/label-has-associated-control": [
          2,
          {
             "labelAttributes": ["label"],
-            "controlComponents": ["Input"],
-            "assert": "both",
+            "controlComponents": ["Input, Switch"],
+            "assert": "either",
             "depth": 3
          }
       ],

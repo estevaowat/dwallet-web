@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Login = styled.div`
+const Login = styled.main`
    background-color: ${props => props.theme.primary};
 `;
 
